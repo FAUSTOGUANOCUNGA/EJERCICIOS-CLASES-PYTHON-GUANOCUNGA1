@@ -29,12 +29,10 @@ class Dispositivo:
 
 # Ejemplo de uso
 if __name__ == "__main__":
-    # Crear dispositivo
     dispositivo1 = Dispositivo("Router Principal", "192.168.1.1")
     dispositivo1.encender()
     dispositivo1.mostrar_info()
 
-    # Probar función de validación de IP
     ip_valida = "192.168.0.100"
     ip_invalida = "300.168.1.1"
 
