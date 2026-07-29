@@ -15,5 +15,5 @@ class Empleado:
         
 
 
-emp = Empleado("", "", 15)
+emp = Empleado("", "", 18)
 print(emp.edad)
