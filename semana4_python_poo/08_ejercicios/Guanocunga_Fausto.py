@@ -3,20 +3,23 @@ class ImpresoraRed:
         # Atributos iniciales de la impresora
         self.ip = ip
         self.modelo = modelo
-        self.paginas_impresas = 0  # Inicializa en 0 según las instrucciones
+        self.paginas_impresoras = 0
+        self.limite_impresion = 5
 
-    def imprimir(self, cantidad):
+    def imprimir(self, paginas):
         # Validación opcional para el reto EXTRA: evitar números negativos
-        if cantidad > 0:
-            self.paginas_impresas += cantidad
+        try:
+
+        if paginas > 0:
+            self.paginas_impresoras += paginas
         else:
-            print("Error: La cantidad de páginas a imprimir debe ser mayor a 0.")
+            raise NameError("Cantidad no valida")
+            except Exception as e:
+            print(e)
 
     def reportar(self):
-        # Muestra la información acumulada de la impresora
-        print(f"IP: {self.ip}")
-        print(f"Modelo: {self.modelo}")
-        print(f"Paginas: {self.paginas_impresas}")
+        print(f"Modelo: {self.modelo}, IP: {self.ip}, Paginas: {self.paginas_impresoras}")
+
 
 
 # --- PRUEBAS ---
