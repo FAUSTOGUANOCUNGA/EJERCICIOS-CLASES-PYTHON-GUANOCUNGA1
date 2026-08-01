@@ -1,5 +1,6 @@
 
-from abstraccion import EscanerPuertos
+from semana4_python_poo.06_pilares_poo import EscanerPuertos
+
 
 class EscanerPuertos:
     """Escanea puertos de un host. Detalles ocultos al usuario."""
