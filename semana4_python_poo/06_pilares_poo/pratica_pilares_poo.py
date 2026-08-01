@@ -1,1 +1,2 @@
 
+from encapsulamiento import CuentaSinProteccion
